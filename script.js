@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
     const healthCheckData = [
-        // Note: Non-ADC sections would be here. The following replaces the previous ADC sections.
         {
             category: "NetScaler ADC - General",
             items: [
@@ -104,6 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 "DTLS is enabled on the vServer to support the EDT protocol.",
                 "Communication to StoreFront is via HTTPS and is load-balanced.",
                 "STAs on Gateway match the StoreFront configuration.",
+                "Callback URL in StoreFront's Gateway settings is only configured if required for SmartAccess/FAS.",
                 "For two-factor auth (RADIUS), failover has been tested from both HA nodes.",
                 "For SAML auth, a 'relaystateRule' is configured to prevent session hijack.",
                 "If using Native OTP, the AD attribute and nFactor login fields are encrypted."
